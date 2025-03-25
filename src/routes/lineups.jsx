@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import BeerCard from "../components/BeerCard";
 
 function lineups() {
 
@@ -9,6 +9,7 @@ function lineups() {
 
     <div>
       <h1>Lineups</h1>
+      <BeerCard/>
     </div>
   );
 }

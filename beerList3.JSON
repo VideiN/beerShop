@@ -1,0 +1,31 @@
+[
+    {
+      "id": 3001,
+      "name": "둥클레스 (새벽길)",
+      "style": "Dark Lager",
+      "abv": 5.0,
+      "price": 9000
+    },
+    {
+      "id": 3002,
+      "name": "따치 IPL",
+      "style": "Lager - DDH IPL",
+      "abv": 5.6,
+      "price": 9000
+    },
+    {
+      "id": 3003,
+      "name": "더블 스타우트 1877",
+      "style": "Double Stout",
+      "abv": 7.0,
+      "price": 10000
+    },
+    {
+      "id": 3004,
+      "name": "친구없는 개구리도 파티에 가고싶다",
+      "style": "DDH West Coast Pilsner",
+      "abv": 5.5,
+      "price": 9000
+    }
+  ]
+  

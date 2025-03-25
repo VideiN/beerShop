@@ -1,0 +1,24 @@
+[
+    {
+      "id": 2001,
+      "name": "뉴문 #2",
+      "style": "Baltic Porter",
+      "abv": 8.0,
+      "price": 11000
+    },
+    {
+      "id": 2002,
+      "name": "펌킨에일 #6",
+      "style": "Pumpkin Ale",
+      "abv": 5.5,
+      "price": 9000
+    },
+    {
+      "id": 2003,
+      "name": "펑키 펌킨",
+      "style": "Spiced Pumpkin Ale",
+      "abv": 5.5,
+      "price": 10000
+    }
+  ]
+  

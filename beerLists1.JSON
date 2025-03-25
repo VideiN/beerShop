@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1001,
+      "name": "나비잠",
+      "style": "Hefeweizen",
+      "abv": 5.2,
+      "price": 8000
+    },
+    {
+      "id": 1002,
+      "name": "XSPA",
+      "style": "Extra Pale Ale",
+      "abv": 5.1,
+      "price": 9000
+    },
+    {
+      "id": 1003,
+      "name": "파스텔로 #5",
+      "style": "NEIPA",
+      "abv": 6.5,
+      "price": 10000
+    },
+    {
+      "id": 1004,
+      "name": "헤비드링커 #5",
+      "style": "Double IPA",
+      "abv": 8.6,
+      "price": 11000
+    }
+  ]
+  
