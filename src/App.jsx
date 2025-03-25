@@ -8,7 +8,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import aboutUs from './routes/AboutUs.jsx';
 import Cart from './routes/Cart.jsx';
 import Lineups from './routes/Lineups.jsx';
-
+import Admin from './routes/Admin.jsx';
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
       <Route path="/about" element={<aboutUs />} />
       <Route path="/lineup" element={<Lineups />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/Admin" element={<Admin />} />
 
     </Routes>
     </>
