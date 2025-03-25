@@ -1,4 +1,5 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
+import {Button} from '@/components/ui/button'
 import Card from 'react-bootstrap/Card';
 
 function BeerCard() {
@@ -11,7 +12,7 @@ function BeerCard() {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button>Go somewhere</Button>
       </Card.Body>
     </Card>
   );

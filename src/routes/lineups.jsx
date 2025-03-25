@@ -1,5 +1,5 @@
 import axios from "axios";
-import BeerCard from "../components/BeerCard";
+import BeerCard from "../MadeComponents/BeerCard";
 
 function lineups() {
 
