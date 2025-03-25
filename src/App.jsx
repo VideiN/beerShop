@@ -1,13 +1,13 @@
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import {Routes, Route, Link, useNavigate} from 'react-router-dom';
+import {Routes, Route, Link, useNavigate} from 'react-router';
 import axios from 'axios'
 import {useState, useEffect} from 'react'
-import { Navbar } from 'react-bootstrap';
-import aboutUs from './Components/aboutUs';
-import cart from './Components/cart';
-import lineups from './Components/lineups';
+import { Nav, Navbar } from 'react-bootstrap';
+import aboutUs from './routes/AboutUs.jsx';
+import Cart from './routes/Cart.jsx';
+import Lineups from './routes/Lineups.jsx';
 
 
 
@@ -17,12 +17,19 @@ function App() {
   return (
     <>
     <Navbar bg="light">
-      <Navbar.Brand href="#home">Navbar</Navbar.Brand>  
+      <Navbar.Brand onClick={()=>{navigate('/')}}>Navbar</Navbar.Brand>
+      <Nav>
+        <Nav.Link onClick={()=>{navigate('/about')}}>About</Nav.Link>
+        <Nav.Link onClick={()=>{navigate('/lineup')}}>Lineup</Nav.Link>
+        <Nav.Link onClick={()=>{navigate('/cart')}}>🛒</Nav.Link>
+      </Nav>
     </Navbar>
 
     <Routes>
       <Route path="/about" element={<aboutUs />} />
-      <Route path="/lineup" element={<lineups />} />
+      <Route path="/lineup" element={<Lineups />} />
+      <Route path="/cart" element={<Cart />} />
+
     </Routes>
     </>
   )
