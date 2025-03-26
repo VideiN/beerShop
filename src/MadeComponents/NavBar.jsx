@@ -4,6 +4,10 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { Menu, User, LogOut } from "lucide-react";
+import {  Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger} from "@/components/ui/accordion";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -21,24 +25,31 @@ export default function NavBar() {
           <SheetContent side="left" className="w-64">
             <div className="p-4 space-y-4">
               <a href="#" className="block text-lg font-bold">Home</a>
-              <a href="#" className="block text-lg font-bold">Products</a>
+                <Accordion type="single" className="will-change-transform" collapsible>
+                    <AccordionItem value="item-1">
+                        <AccordionTrigger className="justify-start text-lg font-bold">Products</AccordionTrigger>
+                        <AccordionContent>
+                        <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">New Arrivals</a>
+                        <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">Best Sellers</a>
+                        <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">Categories</a>
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
               <a href="#" className="block text-lg font-bold">Contact</a>
             </div>
           </SheetContent>
         </Sheet>
 
-        <a href="/" className="text-xl font-bold hidden md:block no-underline text-inherit">My Brand</a>
-      </div>
-
-      {/* 중앙 - 네비게이션 메뉴 (Navigation Menu) */}
-      <NavigationMenu className="hidden md:flex">
+        <a href="/" className="text-xl font-bold hidden md:block no-underline text-inherit">xs brewing room</a>
+        <div className="mr-auto"></div>
+        <NavigationMenu className="hidden md:flex ">
         <NavigationMenuList className="flex gap-6">
           <NavigationMenuItem>
             <NavigationMenuLink href="#" className="hover:text-primary">Home</NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Products</NavigationMenuTrigger>
-            <NavigationMenuContent  alignoffset={18} align="end" className="absolute left-0 p-2 bg-white shadow-md rounded-md origin-top">
+            <NavigationMenuContent  align="start" className="absolute left-0 p-2 bg-white shadow-md rounded-md origin-top">
               <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">New Arrivals</a>
               <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">Best Sellers</a>
               <a href="#" className="block p-2 hover:bg-gray-100 rounded-md">Categories</a>
@@ -49,6 +60,10 @@ export default function NavBar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      </div>
+
+      {/* 중앙 - 네비게이션 메뉴 (Navigation Menu) */}
+      
 
       {/* 우측 - 유저 프로필 (DropdownMenu) */}
       <DropdownMenu>
